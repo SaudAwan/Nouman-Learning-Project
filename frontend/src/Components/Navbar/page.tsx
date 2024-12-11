@@ -1,6 +1,6 @@
 import SimpleButton from "../Buttons/SimpleButton/page";
 import companylogo from "../../../public/icons/swoop-logo.svg"
-import IconImage from "../iconImage/page";
+import IconImage from "../IconImage/page";
 import searchicon from "../../../public/icons/search.svg"
 const Navbar=()=>{
 return(
