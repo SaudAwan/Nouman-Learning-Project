@@ -9,12 +9,12 @@ return(
 
     <div className="w-2/3 flex justify-between items-center">
       <ul className="w-full flex justify-evenly items-center ">
-        <li className="text-[#FFFFFF] font-extrabold leading-5 cursor-pointer">Home</li>
-        <li className="text-[#BBBBBB] cursor-pointer">About us</li>
-        <li className="text-[#BBBBBB] cursor-pointer">How it works</li>
-        <li className="text-[#BBBBBB] cursor-pointer">Why use Swoop</li>
-        <li className="text-[#BBBBBB] cursor-pointer">Our Mission</li>
-        <li className="text-[#BBBBBB] cursor-pointer flex items-center justify-between"> <IconImage imgsrc={searchicon} imgwidth={16} imgheight={16} imgalt="search icon"/> &nbsp; Free Search</li>
+        <li className="text-[#FFFFFF] font-extrabold leading-5">Home</li>
+        <li className="text-[#BBBBBB]">About us</li>
+        <li className="text-[#BBBBBB]">How it works</li>
+        <li className="text-[#BBBBBB]">Why use Swoop</li>
+        <li className="text-[#BBBBBB]">Our Mission</li>
+        <li className="text-[#BBBBBB] flex items-center justify-between"> <IconImage imgsrc={searchicon} imgwidth={16} imgheight={16} imgalt="search icon"/> &nbsp; Free Search</li>
       </ul>
     </div>
 
