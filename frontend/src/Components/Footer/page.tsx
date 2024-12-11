@@ -3,7 +3,7 @@ import companylogo from "../../../public/icons/swoop-logo.svg"
 import IconImage from '../IconImage/page';
 const Footer = () => {
   return (
-    <footer className='w-full bg-[#121212] py-12 px-44'>
+    <footer className='w-full bg-[#121212] py-12 px-44 flex justify-between items-center'>
       <div>
       <IconImage imgsrc={companylogo} imgwidth={112} imgheight={30} imgalt="Company Logo"/>
       <p className='text-[#FFFFFF] font-light leading-5 mt-9'>
@@ -13,21 +13,21 @@ const Footer = () => {
         our environment for years to come.
       </p>
       </div>
-      <div className='flex'>
+      <div className='flex justify-between w-56'>
         <div>
-          <ul className='text-[#FFFFFF] leading-5'>
-            <li className='font-bold'>About Us</li>
-            <li>About Us</li>
-            <li>How it work</li>
-            <li>FAQs</li>
-            <li>Contact</li>
+          <ul className='text-[#FFFFFF] leading-5 font-light'>
+            <li className='font-bold pb-3'>About Us</li>
+            <li className='pb-3'>About Us</li>
+            <li className='pb-3'>How it work</li>
+            <li className='pb-3'>FAQs</li>
+            <li className='pb-3'>Contact</li>
           </ul>
         </div>
         <div>
-          <ul className='text-[#FFFFFF] leading-5'>
-            <li className='font-bold'>Get started</li>
-            <li>Private Jet</li>
-            <li>Register</li>
+          <ul className='text-[#FFFFFF] leading-5 font-light'>
+            <li className='font-bold pb-3'>Get started</li>
+            <li className='pb-3'>Private Jet</li>
+            <li className='pb-3'>Register</li>
           </ul>
         </div>
       </div>
