@@ -22,7 +22,7 @@ const SimpleButton: React.FC<prop> = (props) => {
   const {setLogin, text,bgcolor,width,textcolor,padding_X,padding_Y,textalign,borderradius,weigth,lineheight,fontsize,hover}= props;
   function handleLogin(){
     setLogin?.(prev => !prev);
-    console.log("click")
+    
   }
   return (
     <button className={`${width} ${bgcolor} ${padding_X} ${padding_Y} ${textcolor} ${borderradius}  ${hover} `} onClick={handleLogin}>
