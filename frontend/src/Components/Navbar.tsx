@@ -1,7 +1,7 @@
-import SimpleButton from "../Buttons/SimpleButton/page";
-import companylogo from "../../../public/icons/swoop-logo.svg"
-import IconImage from "../IconImage/page";
-import searchicon from "../../../public/icons/search.svg"
+import SimpleButton from "./Buttons/SimpleButton";
+import companylogo from "../../public/icons/swoop-logo.svg"
+import IconImage from "./Images/Image";
+import searchicon from "../../public/icons/search.svg"
 const Navbar=()=>{
 return(
   <div className="w-full h-[79px] bg-[#0E0F11] py-4 px-[50px] flex justify-between items-center">
