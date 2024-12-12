@@ -4,7 +4,7 @@ import companylogo from "../../public/icons/swoop-logo.svg"
 import IconImage from "./Images";
 import searchicon from "../../public/icons/search.svg"
 import { useState } from "react";
-import LoginUser from "./Loginuser"
+import LoginUser from "./LoginUser"
 
 
 const Navbar=()=>{
