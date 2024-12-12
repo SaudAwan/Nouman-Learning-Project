@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import { Dispatch, SetStateAction } from 'react';
 
 type prop = {
   text: string;
@@ -13,13 +14,20 @@ type prop = {
   weigth:string;
   fontsize:string;
   hover?:string;
+  setLogin?: Dispatch<SetStateAction<boolean>>;
   };
   
 const SimpleButton: React.FC<prop> = (props) => {
-  const {text,bgcolor,width,textcolor,padding_X,padding_Y,textalign,borderradius,weigth,lineheight,fontsize,hover}=props;
+ 
+  const {setLogin, text,bgcolor,width,textcolor,padding_X,padding_Y,textalign,borderradius,weigth,lineheight,fontsize,hover}= props;
+  function handleLogin(){
+    setLogin?.(prev => !prev);
+    console.log("click")
+  }
   return (
-    <button className={`${width} ${bgcolor} ${padding_X} ${padding_Y} ${textcolor} ${borderradius}  ${hover} `}>
+    <button className={`${width} ${bgcolor} ${padding_X} ${padding_Y} ${textcolor} ${borderradius}  ${hover} `} onClick={handleLogin}>
      <p className={`${weigth} ${lineheight} ${textalign} ${fontsize}`}>{text}</p> 
+     
     </button>
   )
 }
