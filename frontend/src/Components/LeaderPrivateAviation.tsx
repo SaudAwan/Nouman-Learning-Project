@@ -1,5 +1,5 @@
 import React from 'react'
-import H1 from "./Headings/H1"
+import H1 from "./Headings/Heading1"
 
 const LeaderPrivateAviation = () => {
   return (
@@ -8,9 +8,7 @@ const LeaderPrivateAviation = () => {
       <div>
             <H1 width="w-96">
               THE LEADER IN PRIVATE AVIATION
-            </H1>
-
-               
+            </H1>       
               
       </div>
 

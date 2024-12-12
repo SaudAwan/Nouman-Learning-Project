@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from 'react'
-import IconImage from './Images/Image' 
+import IconImage from './Images' 
 import loginImage from "../../public/images/loginImage.svg" 
 import Bell from "../../public/icons/Whitebell.svg"
 
@@ -7,7 +7,7 @@ import Bell from "../../public/icons/Whitebell.svg"
   setLogin: Dispatch<SetStateAction<boolean>>;
 }
 
-const Loginuser = ({ setLogin}: loginuser) => {
+const LoginUser = ({ setLogin}: loginuser) => {
   
   return (
     <div className='flex gap-3'>
@@ -20,4 +20,4 @@ const Loginuser = ({ setLogin}: loginuser) => {
   )
 }
 
-export default Loginuser
+export default LoginUser
