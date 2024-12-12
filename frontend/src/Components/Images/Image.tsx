@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React, { Dispatch, SetStateAction } from 'react'
 import Image from 'next/image'
 
 type imgprop={
@@ -6,19 +7,26 @@ type imgprop={
   imgwidth:number;
   imgheight:number;
   imgalt:string;
+  setLogin?: Dispatch<SetStateAction<boolean>>;
+
 }
 
 const IconImage: React.FC<imgprop> = (props) => {
-  const {imgsrc,imgwidth,imgheight,imgalt}=props;
+  const {imgsrc,imgwidth,imgheight,imgalt, setLogin}=props;
+  function handleclick (){
+    setLogin?.((prev)=>!prev);
+   }
   return (
-    <div>
+    // <div>
     <Image
       src={imgsrc}
       width={imgwidth}
       height={imgheight}
       alt={imgalt}
+
+      onClick={handleclick}
     />
-  </div>
+  // </div>
   )
 }
 export default IconImage;
