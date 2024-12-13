@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 type h1={
-  children: string;
+  children: ReactNode;
   width? : string;
   align?: string;
   color:string;
