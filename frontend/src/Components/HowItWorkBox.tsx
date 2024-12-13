@@ -20,43 +20,45 @@ const HowItWorkBox = () => {
      screened and preferences are defined upfront so that the jet 
      charterer and the seat purchasers are compatible. We don't want a 
      jet charterer who likes to sleep on the plane matched up with 
-     someone who likes to crank the music and drink alcohol. <br/> <br/> <br/>
+     someone who likes to crank the music and drink alcohol. <br/> <br/> 
 
 
      The swoop member or non-member logs on to Swoop and finds a 
      flight that they would like to take. Click on “book now” and you are on
-      your way.  <br/> <br/> <br/> 
+      your way.  <br/> <br/> 
 
       Drive to the departure private airport 30 minutes before departure,
        valet your car, walk to your jet and grab a seat. No crowds, no
         security lines. Just a non-invasive security screening to insure your
          safety and other passengers.
        </HomePageTextPicBox>
-       <HomePageTextPicBox image={menandwomenpic} height={548} width={479} flexdirection="flex-row-reverse">
+
+       
+       <HomePageTextPicBox image={menandwomenpic} height={548} width={679} flexdirection="flex-row-reverse">
         <H2>
-       Why Use Swoop for your private jet travel?
-       </H2>
-       Most jets fly only at 25% passenger capacity. Most jet charterers like this concept because of the following:
+       Why Use Swoop for your private jet travel? 
+       </H2> <br />
+       Most jets fly only at 25% passenger capacity. Most jet charterers like this concept because of the following: <br/> <br />
 
        <H4>
-       . &nbsp;They feel guilty flying with empty seats
+       . &nbsp;They feel guilty flying with empty seats <br/> <br /> 
        </H4>
-       After speaking with many jet charterers, they explained that they feel bad that they fly with empty seats but, they have to, until now.
+       After speaking with many jet charterers, they explained that they feel bad that they fly with empty seats but, they have to, until now. <br /> <br /> 
          
        <H4>
-       . &nbsp;They can offset the cost of the jet charter
+       . &nbsp;They can offset the cost of the jet charter<br /> <br /> 
        </H4>
 
-       No matter how much money you have, we all like to save money.
+       No matter how much money you have, we all like to save money. <br /> <br /> 
 
        <H4>
-       . &nbsp;Less of a carbon footprint by filling every seat
+       . &nbsp;Less of a carbon footprint by filling every seat <br /> <br /> 
        </H4>
 
-       41% of private flights are empty, 59% of private flights avg only 4 passengers. Because of this, flying private is the least fuel efficient means of transportation
+       41% of private flights are empty, 59% of private flights avg only 4 passengers. Because of this, flying private is the least fuel efficient means of transportation <br /> <br /> 
 
        <H4>
-       . &nbsp;Meeting new people
+       . &nbsp;Meeting new people <br /> <br /> 
        </H4>
 
        41% of private flights are empty, 59% of private flights avg only 4 passengers. Because of this, flying private is the least fuel efficient means of transportation

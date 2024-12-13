@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import H1 from './Headings/Heading1'
 import TextMain from './Headings/TextMain'
 
 type heading={
   heading:string;
-  children:string;
+  children:ReactNode;
 }
 const HomePageHeadingBox = ({heading,children}:heading) => {
   return (
