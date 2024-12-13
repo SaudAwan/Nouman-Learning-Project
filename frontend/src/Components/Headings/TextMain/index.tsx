@@ -3,15 +3,15 @@ import React, { ReactNode } from 'react'
 type textmain ={
   children: ReactNode;
   letterSpacing?: string;
-  weight: string;
+  weight?: string;
   width?:string;
-  color: string;
+  color?: string;
   align?: string;
 }
 
 const TextMain = ({children, letterSpacing,weight, width,color , align}:textmain ) => {
   return (
-    <p className={` ${weight} leading-[19px] ${color} ${letterSpacing} ${width} ${align}`}>
+    <p className={` ${weight} leading-[19px] ${color? (color): "text-[#000000]"} ${letterSpacing} ${width} ${align}`}>
       {children}
     </p>
   )
