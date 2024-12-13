@@ -4,9 +4,9 @@ import TextMain from './Headings/TextMain'
 
 type heading={
   heading:string;
-  content:string;
+  children:string;
 }
-const HomePageHeadingBox = ({heading,content}:heading) => {
+const HomePageHeadingBox = ({heading,children}:heading) => {
   return (
     <div className='bg-[#121212] py-5 px-48 flex flex-col gap-2'>
 
@@ -18,7 +18,7 @@ const HomePageHeadingBox = ({heading,content}:heading) => {
 
      <TextMain weight="font-light" color="text-[#FFFFFF]" width='w-[1048px] ' align="text-center">
       
-      {content}
+      {children}
       
      </TextMain>
      
