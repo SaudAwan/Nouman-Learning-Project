@@ -5,11 +5,13 @@ type textmain ={
   letterSpacing?: string;
   weight: string;
   width?:string;
+  color: string;
+  align?: string;
 }
 
-const TextMain = ({children, letterSpacing,weight, width}:textmain ) => {
+const TextMain = ({children, letterSpacing,weight, width,color , align}:textmain ) => {
   return (
-    <p className={` ${weight} leading-[19px] text-[#121212] ${letterSpacing} ${width}`}>
+    <p className={` ${weight} leading-[19px] ${color} ${letterSpacing} ${width} ${align}`}>
       {children}
     </p>
   )

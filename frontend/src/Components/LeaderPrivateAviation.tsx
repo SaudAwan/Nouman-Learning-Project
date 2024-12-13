@@ -9,11 +9,11 @@ const LeaderPrivateAviation  = () => {
     <div className="bg-[#F7F7F7] py-12 px-36 gap-8 flex justify-center items-center ">
 
       <div>
-            <H1 width="w-96">
+            <H1 width="w-96" color='text-[#121212]'>
               THE LEADER IN PRIVATE AVIATION
             </H1>   
 
-            <TextMain letterSpacing="tracking-[4px]" weight="font-light">
+            <TextMain letterSpacing="tracking-[4px]" weight="font-light" color="text-[#121212]">
 
               FLY PRIVATE WITH CONFIDENCE
               </TextMain>    
@@ -23,7 +23,7 @@ const LeaderPrivateAviation  = () => {
 
       <div>
 
-      <TextMain weight="font-medium" width="w-[685px]">
+      <TextMain weight="font-medium" width="w-[685px]" color="text-[#121212]">
 
         
 
