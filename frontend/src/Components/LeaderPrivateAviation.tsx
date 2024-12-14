@@ -6,10 +6,10 @@ import TextMain from "./Headings/TextMain"
 
 const LeaderPrivateAviation  = () => {
   return (
-    <div className="bg-[#F7F7F7] lg:py-12 lg:px-36 lg:gap-8 flex justify-center items-center md:gap-7 md:p-7">
+    <div className="bg-[#F7F7F7] lg:py-12 lg:px-36 lg:gap-8 sm:p-5 flex justify-center md:items-center sm:flex-col md:gap-7 md:p-7">
 
       <div>
-            <H1 width="lg:w-96 md:w-72" color='text-[#121212]'>
+            <H1 width="lg:w-96 md:w-72 sm:w-56" color='text-[#121212]'>
               THE LEADER IN PRIVATE AVIATION
             </H1>   
 
@@ -21,7 +21,7 @@ const LeaderPrivateAviation  = () => {
       </div>
 
 
-      <div>
+      <div className='sm:mt-4'>
 
       <TextMain weight="font-medium" width="lg:w-[685px] md:w-[406px]" color="text-[#121212]">
 
