@@ -9,7 +9,7 @@ type h1={
 
 const H1  = ({children, width , align,color}:h1) => {
   return (
-    <h1 className={`lg:text-[40px] font-bold lg:leading-[48px] md:leading-7 md:text-[30px] ${color} ${width} ${align} `}>
+    <h1 className={`lg:text-[40px] font-bold lg:leading-[48px] md:leading-9 md:text-[30px] ${color} ${width} ${align} `}>
       
       {children}
       
