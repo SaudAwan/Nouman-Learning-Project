@@ -12,7 +12,7 @@ const HomePageHeadingBox = ({heading,children, mobFont}:heading) => {
     <div className='bg-[#121212] py-5 px-48 flex flex-col items-center gap-2'>
 
       
-   <H1 align="text-center" color='text-[#FFFFFF]' width='sm:w-60'> {heading}  </H1>
+   <H1 align="text-center" color='text-[#FFFFFF]' width='md:w-auto sm:w-60'> {heading}  </H1>
     
    
 

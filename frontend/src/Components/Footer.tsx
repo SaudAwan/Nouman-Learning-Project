@@ -3,7 +3,7 @@ import companylogo from "../../public/icons/swoop-logo.svg"
 import IconImage from './Images';
 const Footer = () => {
   return (
-    <footer className='w-full bg-[#121212] lg:py-12  md:py-7 lg:px-44 md:px-12 sm:p-5 flex md:justify-between items-center sm:flex-col'>
+    <footer className='w-full bg-[#121212] lg:py-12  md:py-7 lg:px-44 md:px-12 sm:p-5 flex md:justify-between items-center md:flex-row sm:flex-col'>
       <div>
       <IconImage imgsrc={companylogo} imgwidth={112} imgheight={30} imgalt="Company Logo"/>
       <p className='text-[#FFFFFF] lg:w-auto md:w-[340px] sm:w-[330px] lg:font-light lg:leading-5 md:leading-[14px] sm:leading-[12px] md:mt-9 lg:text-[16px] md:text-[12px] sm:text-[10px] sm:pt-2.5'>
