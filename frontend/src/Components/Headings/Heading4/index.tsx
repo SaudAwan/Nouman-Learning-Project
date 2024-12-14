@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 type h2={
-  children: string;
+  children: ReactNode;
   width? : string;
   align?: string;
   color?:string;
@@ -9,11 +9,11 @@ type h2={
 
 const H4  = ({children, width , align,color}:h2) => {
   return (
-    <h1 className={`text-[16px] font-bold leading-[19px] ${color? (color): "text-[#000000]"} ${width} ${align}`}>
+    <h4 className={`lg:text-[16px] md:text-[14px] font-bold lg:leading-[19px] md:leading-[16px] ${color? (color): "text-[#000000]"} ${width} ${align}`}>
       
       {children}
       
-    </h1>
+    </h4>
   )
 }
 
