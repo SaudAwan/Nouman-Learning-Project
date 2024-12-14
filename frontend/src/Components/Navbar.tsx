@@ -10,7 +10,7 @@ import LoginUser from "./LoginUser"
 const Navbar=()=>{
   const [Login, setLogin]=useState<boolean>(false);
 return(
-  <div className="w-full h-[79px] bg-[#0E0F11] py-4 px-[50px] flex justify-between items-center">
+  <div className="w-full h-[79px] bg-[#0E0F11] py-4 px-[50px] flex justify-between items-center ">
     <IconImage imgsrc={companylogo} imgwidth={88} imgheight={24} imgalt="Company Logo"/>
 
     <div className="w-1/2 flex justify-between items-center">

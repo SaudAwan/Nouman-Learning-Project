@@ -8,7 +8,7 @@ type heading={
 }
 const HomePageHeadingBox = ({heading,children}:heading) => {
   return (
-    <div className='bg-[#121212] py-5 px-48 flex flex-col gap-2'>
+    <div className='bg-[#121212] py-5 px-48 flex flex-col items-center gap-2'>
 
       
    <H1 align="text-center" color='text-[#FFFFFF]'> {heading} </H1>
@@ -16,7 +16,7 @@ const HomePageHeadingBox = ({heading,children}:heading) => {
    
 
 
-     <TextMain weight="font-light" color="text-[#FFFFFF]" width='w-[1048px] ' align="text-center">
+     <TextMain weight="font-light" color="text-[#FFFFFF]" width='lg:w-[1048px] md:w-[568px] ' align="text-center">
       
       {children}
       

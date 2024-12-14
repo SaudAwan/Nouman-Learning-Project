@@ -11,8 +11,8 @@ type HomePageTextPic={
 const HomePageTextPicBox = ({children, image, height,width,flexdirection}:HomePageTextPic) => {
   return (
     <div className={`flex ${flexdirection} `}>
-      <div className='p-14 w-[694px] bg-[#F3F5F9]'>
-       <TextMain width='w-[555px]' >
+      <div className='lg:p-14 md:p-8 lg:w-[694px] md:[450px] bg-[#F3F5F9]'>
+       <TextMain width='lg:w-[555px] md:w-[320px]' >
         
         {children}
 
