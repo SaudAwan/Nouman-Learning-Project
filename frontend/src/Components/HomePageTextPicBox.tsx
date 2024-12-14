@@ -10,9 +10,9 @@ type HomePageTextPic={
 }
 const HomePageTextPicBox = ({children, image, height,width,flexdirection}:HomePageTextPic) => {
   return (
-    <div className={`flex ${flexdirection} `}>
+    <div className={`flex ${flexdirection} sm:flex-wrap `}>
       <div className='lg:p-14 md:p-8 lg:w-[694px] md:[450px] bg-[#F3F5F9]'>
-       <TextMain width='lg:w-[555px] md:w-[320px]' >
+       <TextMain width='lg:w-[555px] md:w-[320px]' padding='sm:p-5' >
         
         {children}
 

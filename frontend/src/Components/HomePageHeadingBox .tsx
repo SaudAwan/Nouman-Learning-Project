@@ -11,12 +11,12 @@ const HomePageHeadingBox = ({heading,children}:heading) => {
     <div className='bg-[#121212] py-5 px-48 flex flex-col items-center gap-2'>
 
       
-   <H1 align="text-center" color='text-[#FFFFFF]'> {heading} </H1>
+   <H1 align="text-center" color='text-[#FFFFFF]' width='sm:w-60'> {heading}  </H1>
     
    
 
 
-     <TextMain weight="font-light" color="text-[#FFFFFF]" width='lg:w-[1048px] md:w-[568px] ' align="text-center">
+     <TextMain weight="font-light" color="text-[#FFFFFF]" width='lg:w-[1048px] md:w-[568px] sm:w-[330px] ' align="text-center">
       
       {children}
       
