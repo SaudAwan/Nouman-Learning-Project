@@ -6,12 +6,16 @@ import mountainpic from "../../public/images/mountainpic.svg"
 const OurMissionBox = () => {
   return (
     <div>
-       <HomePageHeadingBox heading="Our Mission"> 
+       <HomePageHeadingBox heading="Our Mission" mobFont="sm:text-[8px]"> 
        Increase the number of people who can afford to fly privately from 1% to at least 17% of the population. <br /> <br />
-      Decrease the number of Private planes flying that are emitting 10 times the pollutants into our <br />
-       atmosphere 
-      than commercial flights, by filling every seat on every private plane.  <br /> <br />
-      Saving the environment one seat at a time.
+
+
+      
+       Decrease the number of Private planes flying that are emitting 10 times the pollutants into our <br />
+       
+      atmosphere than commercial flights, by filling every seat on every private plane.   <br /> <br /> 
+
+            Saving the environment one seat at a time.
       </HomePageHeadingBox>
 
       <HomePageTextPicBox image={mountainpic} height={374} width={655}>

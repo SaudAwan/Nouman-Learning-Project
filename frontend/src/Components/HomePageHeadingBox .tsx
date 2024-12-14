@@ -5,8 +5,9 @@ import TextMain from './Headings/TextMain'
 type heading={
   heading:string;
   children:ReactNode;
+  mobFont?:string;
 }
-const HomePageHeadingBox = ({heading,children}:heading) => {
+const HomePageHeadingBox = ({heading,children, mobFont}:heading) => {
   return (
     <div className='bg-[#121212] py-5 px-48 flex flex-col items-center gap-2'>
 
@@ -16,7 +17,7 @@ const HomePageHeadingBox = ({heading,children}:heading) => {
    
 
 
-     <TextMain weight="font-light" color="text-[#FFFFFF]" width='lg:w-[1048px] md:w-[568px] sm:w-[330px] ' align="text-center">
+     <TextMain mobFont={mobFont} weight="font-light" color="text-[#FFFFFF]" width='lg:w-[1048px] md:w-[568px] sm:w-[330px] ' align="text-center">
       
       {children}
       
