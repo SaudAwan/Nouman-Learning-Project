@@ -11,8 +11,8 @@ type prop = {
   padding_Y:string;
   borderradius:string;
   lineheight:string;
-  weigth:string;
-  fontsize:string;
+  weigth?:string;
+  fontsize?:string;
   hover?:string;
   setLogin?: Dispatch<SetStateAction<boolean>>;
   };

@@ -6,27 +6,29 @@ import Aircrafticon from "../../public/icons/Aircraft.svg"
 import H3 from './Headings/Heading3'
 import H4 from './Headings/Heading4'
 import TextMain from './Headings/TextMain'
+import SimpleButton from './Buttons/SimpleButton'
 
 
 type card={
   planeImage:string;
   Heading:string;
   DepartureDate:string;
-  Seats:number;
+  Seats:string;
   AircraftName:string;
   SeatPrice:number;
+  buttonText:string;
 }
 
 
-const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPrice }:card) => {
+const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPrice, buttonText }:card) => {
   return (
-    <div className='lg:w-[368px] lg:h-[487px] border rounded-[10px] p-6  ' >
+    <div className='lg:w-[368px] lg:h-[487px] border rounded-[10px] p-6 flex flex-col justify-between items-center ' >
      
      <div>
      <IconImage imgsrc={planeImage} imgwidth={320} imgheight={180} imgalt="Plane Image"/>
      </div>
 
-     <div>
+     <div className='flex flex-col gap-3 border-b'>
       <H3>
         {Heading}
         </H3>
@@ -90,7 +92,7 @@ const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPric
 
 
 
-        <div className='flex justify-between'>
+        <div className='flex justify-between mb-3'>
 
           <div className='flex gap-1' >
 
@@ -111,7 +113,7 @@ const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPric
      </div>
 
      <div>
-
+             <SimpleButton text={buttonText} bgcolor="bg-[#FED130]" width="w-[141px]" textcolor="text-[#121212]" padding_X="px-6" padding_Y="py-3.5" textalign="text-center" borderradius="rounded-md"  lineheight="leading-[19px]" />
      </div>
 
     </div>
