@@ -1,10 +1,10 @@
 "use client";
 import SimpleButton from "./Buttons/SimpleButton";
 import companylogo from "../../public/icons/swoop-logo.svg"
-import IconImage from "./Images/Image";
+import IconImage from "./Images";
 import searchicon from "../../public/icons/search.svg"
 import { useState } from "react";
-import Loginuser from "./Loginuser"
+import LoginUser from "./LoginUser"
 
 
 const Navbar=()=>{
@@ -25,7 +25,7 @@ return(
     </div>
 
     <div className={`${Login? "" : "w-52" } flex justify-evenly`}>
-      { Login ? (<Loginuser setLogin={setLogin} />) : (
+      { Login ? (<LoginUser setLogin={setLogin} />) : (
         <>
        <SimpleButton setLogin={setLogin} text="Log in" width="w-auto" bgcolor="bg-[#FFFFFF]" textcolor="text-[#121212]" lineheight="leading-5" fontsize="text-sm" weigth="font-normal" borderradius="rounded-md" padding_X="px-[24px]" padding_Y="py-[14px]" textalign="text-center" hover="hover:bg-[#0E0F11]  hover:text-white"/>
        <SimpleButton text="Sign up" width="w-auto" bgcolor="bg-[#FED130]" textcolor="text-[#121212]" lineheight="leading-5" fontsize="text-sm" weigth="font-normal" borderradius="rounded-md" padding_X="px-[24px]" padding_Y="py-[14px]" textalign="text-center" hover="hover:bg-[#0E0F11]  hover:text-white"/>

@@ -1,6 +1,6 @@
 import React from 'react'
 import companylogo from "../../public/icons/swoop-logo.svg"
-import IconImage from './Images/Image';
+import IconImage from './Images';
 const Footer = () => {
   return (
     <footer className='w-full bg-[#121212] py-12 px-44 flex justify-between items-center'>

@@ -1,6 +1,6 @@
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import LeaderPrivateAviation from "@/Components/LeaderPrivateAviation";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import LeaderPrivateAviation from "@/components/LeaderPrivateAviation";
 import "./globals.css";
 export default function Home() {
   return (
