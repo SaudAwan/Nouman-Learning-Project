@@ -11,7 +11,7 @@ type imgprop={
 
 }
 
-const IconImage: React.FC<imgprop> = (props) => {
+const ImageWrapper: React.FC<imgprop> = (props) => {
   const {imgsrc,imgwidth,imgheight,imgalt, setLogin}=props;
   function handleclick (){
     setLogin?.((prev)=>!prev);
@@ -29,4 +29,4 @@ const IconImage: React.FC<imgprop> = (props) => {
   // </div>
   )
 }
-export default IconImage;
+export default ImageWrapper;
