@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import IconImage from './Images'
+import ImageWrapper from './Image'
 import TextMain from './Headings/TextMain'
 type HomePageTextPic={
   children:ReactNode;
@@ -20,7 +20,7 @@ const HomePageTextPicBox = ({children, image, height,width,flexdirection}:HomePa
 
        </div>
        <div className=''>
-        <IconImage imgsrc={image} imgwidth={width} imgheight={height} imgalt="planeInterior"/>
+        <ImageWrapper imgsrc={image} imgwidth={width} imgheight={height} imgalt="planeInterior"/>
        </div>
     </div>
   )

@@ -20,7 +20,7 @@ type FlightDetail = {
 
 const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, DepartureDate, Seats, AircraftType, NumberOfStops, SaetPrice, flightImage }) => {
   return (
-    <div className='border border-[#DEE2E6] p-6 rounded-md' >
+    <div className='border border-[#DEE2E6] p-6 rounded-md flex items-center justify-evenly' >
 
       <div>
         <ImageWrapper imgsrc={flightImage} imgwidth={200} imgheight={150} imgalt="PlaneImage" />
@@ -28,17 +28,17 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
 
       <div>
         {/* destination heading box */}
-        <div>
+        <div className='mb-4'>
           <H3>
             {DestinationHeading}
           </H3>
         </div>
 
         {/* flight detail box */}
-        <div>
-          <div>
+        <div className='flex gap-7'>
+          <div className='flex flex-col items-center'>
 
-            <div>
+            <div className="flex gap-2 ">
               <ImageWrapper imgsrc={departureIcon} imgwidth={16} imgheight={16} imgalt="Departure Icon" />
               <H4>Departure Date</H4>
 
@@ -50,9 +50,9 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
 
           </div>
 
-          <div>
+          <div className='flex flex-col items-center'>
 
-            <div>
+            <div className="flex gap-2 ">
               <ImageWrapper imgsrc={Seaticon} imgwidth={16} imgheight={16} imgalt="Seat Icon" />
               <H4>Seats Available</H4>
 
@@ -63,9 +63,9 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
 
           </div>
 
-          <div>
+          <div className='flex flex-col items-center'>
 
-          <div>
+          <div className="flex gap-2 ">
               <ImageWrapper imgsrc={Aircrafticon} imgwidth={16} imgheight={16} imgalt="Aircraft Icon" />
               <H4>Aircraft Type</H4>
 
@@ -77,9 +77,9 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
 
           </div>
 
-          <div>
+          <div className='flex flex-col items-center gap-1'>
 
-          <div>
+          <div className="flex gap-2 ">
               <ImageWrapper imgsrc={stopCircle} imgwidth={16} imgheight={16} imgalt="Stop Circle Icon" />
               <H4>Number of Stops</H4>
 
