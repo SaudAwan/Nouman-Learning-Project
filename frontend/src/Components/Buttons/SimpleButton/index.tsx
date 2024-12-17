@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction } from 'react';
 type prop = {
   text: string;
   bgcolor: string;
-  width:string;
+  width?:string;
   textcolor:string;
   textalign:string;
   padding_X:string;

@@ -1,7 +1,7 @@
 "use client";
 import SimpleButton from "./Buttons/SimpleButton";
 import companylogo from "../../public/icons/swoop-logo.svg"
-import IconImage from "./Images";
+import ImageWrapper from './Image'
 import searchicon from "../../public/icons/search.svg"
 import { useState } from "react";
 import LoginUser from "./Loginuser"
@@ -11,7 +11,7 @@ const Navbar=()=>{
   const [Login, setLogin]=useState<boolean>(false);
 return(
   <div className="w-full h-[79px] bg-[#0E0F11] py-4 px-[50px] flex justify-between items-center ">
-    <IconImage imgsrc={companylogo} imgwidth={88} imgheight={24} imgalt="Company Logo"/>
+    <ImageWrapper  imgsrc={companylogo} imgwidth={88} imgheight={24} imgalt="Company Logo"/>
 
     <div className="w-1/2 flex justify-between items-center">
       <ul className="w-full flex justify-evenly items-center ">
@@ -20,7 +20,9 @@ return(
         <li className="text-[#BBBBBB]">{Login? "Dashboard" :"How it works"}</li>
         <li className="text-[#BBBBBB]">{Login? "Marketplace":"Why use Swoop"}</li>
         <li className="text-[#BBBBBB]">{Login? "FBO Flights" :"Our Mission"}</li>
-        <li className="text-[#BBBBBB] flex items-center justify-between"> <IconImage imgsrc={searchicon} imgwidth={16} imgheight={16} imgalt="search icon"/> &nbsp; Free Search</li>
+        <li className="text-[#BBBBBB] flex items-center justify-between"> 
+          <ImageWrapper  imgsrc={searchicon} imgwidth={16} imgheight={16} imgalt="search icon"/>
+           &nbsp; Free Search</li>
       </ul>
     </div>
 

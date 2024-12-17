@@ -1,5 +1,5 @@
 import React from 'react'
-import IconImage from "./Images"
+import ImageWrapper from './Image'
 import mapimage from "../../public/images/mapimage.svg"
 import planeOne from "../../public/images/plane1.svg"
 import planeTwo from "../../public/images/plane2.svg"
@@ -19,7 +19,7 @@ const ClickSearchBox = () => {
       <div className='mb-7'>
        {/* IconImage component imported from images component   */}
 
-        <IconImage imgsrc={mapimage} imgwidth={1240} imgheight={340} imgalt="map Image"/>
+        <ImageWrapper imgsrc={mapimage} imgwidth={1240} imgheight={340} imgalt="map Image"/>
         </div>
     </div>
   )
