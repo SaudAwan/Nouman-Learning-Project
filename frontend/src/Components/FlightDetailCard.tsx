@@ -6,7 +6,9 @@ import departureIcon from "../../public/icons/departure icon.svg"
 import Seaticon from "../../public/icons/Seat.svg"
 import Aircrafticon from "../../public/icons/Aircraft.svg"
 import stopCircle from "../../public/images/StopCircle.svg"
+import TickSign from "../../public/images/TickSign.svg"
 import TextMain from './Headings/TextMain'
+import SimpleButton from './Buttons/SimpleButton'
 
 type FlightDetail = {
   DestinationHeading: string;
@@ -20,7 +22,7 @@ type FlightDetail = {
 
 const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, DepartureDate, Seats, AircraftType, NumberOfStops, SaetPrice, flightImage }) => {
   return (
-    <div className='border border-[#DEE2E6] p-6 rounded-md flex items-center justify-evenly' >
+    <div className='border border-[#DEE2E6] p-6 rounded-md flex items-center justify-evenly w-[1148px] h-48' >
 
       <div>
         <ImageWrapper imgsrc={flightImage} imgwidth={200} imgheight={150} imgalt="PlaneImage" />
@@ -65,7 +67,7 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
 
           <div className='flex flex-col items-center'>
 
-          <div className="flex gap-2 ">
+            <div className="flex gap-2 ">
               <ImageWrapper imgsrc={Aircrafticon} imgwidth={16} imgheight={16} imgalt="Aircraft Icon" />
               <H4>Aircraft Type</H4>
 
@@ -73,13 +75,13 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
             <TextMain>
               {AircraftType}
             </TextMain>
-          
+
 
           </div>
 
           <div className='flex flex-col items-center gap-1'>
 
-          <div className="flex gap-2 ">
+            <div className="flex gap-2 ">
               <ImageWrapper imgsrc={stopCircle} imgwidth={16} imgheight={16} imgalt="Stop Circle Icon" />
               <H4>Number of Stops</H4>
 
@@ -92,14 +94,33 @@ const FlightDetailCard: React.FC<FlightDetail> = ({ DestinationHeading, Departur
           </div>
 
 
-
         </div>
 
 
-        <div></div>
+        <div className="flex gap-2 mt-5 ">
+            <ImageWrapper imgsrc={TickSign} imgwidth={16} imgheight={16} imgalt="Tick Circle Icon" />
+            <TextMain>picking you up at your nearest airport for an extra fee</TextMain>
+          </div>
 
 
       </div>
+
+      {/* button and price container  */}
+      <div>
+            
+         <div className='flex flex-col items-end gap-[3px}'>
+         <TextMain>Seat Price</TextMain>
+         <H3>
+            ${SaetPrice}
+          </H3>
+         </div>
+
+         <SimpleButton text="View Details" bgcolor="bg-[#FED130]" textcolor="text-[#121212]" padding_X="px-6" 
+         padding_Y="py-3.5" textalign="text-center" borderradius="rounded-md" lineheight="leading-5"/>
+
+      </div>
+
+
 
     </div>
   )
