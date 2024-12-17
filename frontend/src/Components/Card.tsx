@@ -28,12 +28,12 @@ const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPric
      <ImageWrapper imgsrc={planeImage} imgwidth={320} imgheight={180} imgalt="Plane Image"/>
      </div>
 
-     <div className='flex flex-col gap-3 border-b'>
+     <div className='flex flex-col gap-3 border-b w-80' >
       <H3>
         {Heading}
         </H3>
 
-        <div className='flex justify-between w-64'>
+        <div className='flex justify-between'>
 
           <div className='flex gap-1' >
 
