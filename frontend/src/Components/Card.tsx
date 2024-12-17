@@ -33,7 +33,7 @@ const Card = ({planeImage, Heading, DepartureDate, Seats, AircraftName, SeatPric
         {Heading}
         </H3>
 
-        <div className='flex justify-between'>
+        <div className='flex justify-between w-64'>
 
           <div className='flex gap-1' >
 
