@@ -8,6 +8,7 @@ import LoginUser from "./Loginuser"
 
 
 const Navbar=()=>{
+  // using the lifting the state up technique for usestate
   const [Login, setLogin]=useState<boolean>(false);
 return(
   <div className="w-full h-[79px] bg-[#0E0F11] py-4 px-[50px] flex justify-between items-center ">
